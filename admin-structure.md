@@ -1,7 +1,18 @@
 # Admin Console data types & parameter structure
 
-> Informacion General Congreso - Section A
 
+## Meta:
+## Crear Congreso
+## Crear Conferencista
+## Agendar Conferencia (conferencista-side)
+
+> Login
+| Field          | Parameter Name        | Data Type
+|--------------- |-----------------------|----------
+| Usuario | username | string
+| Contrasena | password | string
+
+> Informacion General Congreso - Section A
 
 | Field          | Parameter Name        | Data Type
 |--------------- |-----------------------|----------
@@ -63,3 +74,25 @@ var base64str = Promise.resolve(base64_encode("PATH TO LOGO AND/OR BANNER IMAGE"
 |Hora de Viaje | horaViaje| String
 |Lugar de Partida  | lugarPartida| String
 |Lugar de Llegada | lugarLlegada| String
+
+
+
+> Login POST RESPONSE
+
+```json
+{
+ "responseStatus": "200",
+ "authenticated": "yes" | "no",
+ "role": "user" | "doctor" | "admin" | "custom"
+}
+```
+> Agenda Conferencistas GET Request
+```json
+
+{
+ "nombre": "Felix Bautista",
+ "role": "doctor",
+ "conferencias": ["Cirugia de Rodilla", "Practicas de Implante Tobillo", "Cuidado del Hombro"],
+ "id": [145, 332, 442]
+}
+```
