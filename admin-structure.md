@@ -2,9 +2,9 @@
 
 
 ## Meta:
-## Crear Congreso
-## Crear Conferencista
-## Agendar Conferencia (conferencista-side)
+- Crear Congreso
+- Crear Conferencista
+- Agendar Conferencia (conferencista-side)
 
 > Login
 | Field          | Parameter Name        | Data Type
