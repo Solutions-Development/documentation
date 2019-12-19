@@ -42,3 +42,24 @@ var base64str = Promise.resolve(base64_encode("PATH TO LOGO AND/OR BANNER IMAGE"
     console.log(rsp); // RSP IS THE BASE64 STRING TO BE POSTED TO Api
 });
 ```
+> Section B - Conferencistas
+
+| Field          | Parameter Name        | Data Type
+|--------------- |-----------------------|----------
+|Nombre Completo | nombre | String
+|Foto de Perfil | fotoPerfil| String
+|Pais | pais| String
+|Telefono Movil | telefonoMovil| String
+|Telefono Trabajo | telefonoTrabajo| String
+|Email | email| String
+|Estudio de Grado | estudioGrado| String
+|Especialidad | especialidad| String
+|Sub Especialidad / Doctorado | doctorado| String
+|Practica Publica / Privada | practicas| String
+|Detalle Membresias Profesionales / Gremiales | membresias| String
+|Pais de Partida | paisPartida| String
+|Cantidad de Personas | cantidadPersonas| String
+|Numero de Pasaporte | numeroPasaporte| String
+|Hora de Viaje | horaViaje| String
+|Lugar de Partida  | lugarPartida| String
+|Lugar de Llegada | lugarLlegada| String
