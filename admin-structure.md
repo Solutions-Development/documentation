@@ -25,7 +25,7 @@
 | Banner           | banner | base64 encoded image string (SEE SECTION A - BASE64)
 | Logo         | logo | base64 encoded image string (SEE SECTION A - BASE64)
 
-> Section A POST example
+> Section A POST example - Web
 
 ```js
 {
@@ -39,7 +39,7 @@
   "logo": "base64:ay;;'3rf/$cvi"
 }
 ```
-> Section A - BASE64
+> Section A - BASE64 - Web - Mobile
 ```js
 var fs = require('fs');
 
@@ -55,7 +55,7 @@ var base64str = Promise.resolve(base64_encode("PATH TO LOGO AND/OR BANNER IMAGE"
     console.log(rsp); // RSP IS THE BASE64 STRING TO BE POSTED TO Api
 });
 ```
-> Section B - Conferencistas
+> Section B - Conferencistas - Web - Mobile
 
 | Field          | Parameter Name        | Data Type
 |--------------- |-----------------------|----------
@@ -79,7 +79,7 @@ var base64str = Promise.resolve(base64_encode("PATH TO LOGO AND/OR BANNER IMAGE"
 
 
 
-> Login POST RESPONSE
+> Login POST RESPONSE - Web
 
 ```json
 {
@@ -88,7 +88,7 @@ var base64str = Promise.resolve(base64_encode("PATH TO LOGO AND/OR BANNER IMAGE"
  "role": "user" | "doctor" | "admin" | "custom"
 }
 ```
-> Agenda Conferencistas GET Request
+> Agenda Conferencistas GET Request -  Web - Mobile
 ```json
 
 {
@@ -98,3 +98,10 @@ var base64str = Promise.resolve(base64_encode("PATH TO LOGO AND/OR BANNER IMAGE"
  "id": [145, 332, 442]
 }
 ```
+> Home Screen - Mobile
+
+| Field          | Parameter Name        | Data Type
+|--------------- |-----------------------|----------
+| Header     | homeScreenHeader | String
+| Icons         | icon  | base64 encoded image string
+| Icon Name        | iconName  | string
